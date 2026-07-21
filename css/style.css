@@ -1,11 +1,11 @@
 @font-face {
     font-family: "vazirRegular";
-    src: url(/font/Vazirmatn-Regular.ttf);
+    src: url(https://lib.arvancloud.ir/vazir-font/33.003/fonts/ttf/Vazirmatn-Regular.ttf);
     font-weight: 400;
 }
 @font-face {
     font-family: "vazirBold";
-    src: url(/font/Vazirmatn-Bold.ttf);
+    src: url(https://lib.arvancloud.ir/vazir-font/33.003/fonts/ttf/Vazirmatn-Bold.ttf);
     font-weight: 700;
 }
 *{
