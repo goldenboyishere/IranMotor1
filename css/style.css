@@ -494,3 +494,6 @@ body{
     flex-direction: column;
     min-width: 0;
 }
+body{
+    font-family: "Vazirmatn", sans-serif;
+}
