@@ -1,0 +1,186 @@
+@font-face {
+    font-family: "vazirRegular";
+    src: url(https://lib.arvancloud.ir/vazir-font/33.003/fonts/ttf/Vazirmatn-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "vazirBold";
+    src: url(https://lib.arvancloud.ir/vazir-font/33.003/fonts/ttf/Vazirmatn-Bold.ttf);
+    font-weight: 700;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary: #FF6A00;
+    --primary-hover: #FF8C1A;
+    --dark: #111111;
+    --dark-light: #1E1E1E;
+    --background: #F4F4F4;
+    --card: #FFFFFF;
+    --text: #222222;
+    --text-light: #777777;
+    --border: #DDDDDD;
+    --success: #28A745;
+    --danger: #DC3545;
+}
+body{
+    background: var(--background);
+    font-family: "vazirBold", sans-serif;
+    color: var(--text);
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    position: relative;
+    z-index: 1001;
+}
+
+.left{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-family: "vazirBold", sans-serif;
+    font-size: large;
+}
+.center{
+    height: 100%;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    height: 100%;
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    height:clamp(45px,5vw,70px);
+    width: auto;
+    border-radius: 20px;
+}
+
+.main{
+    width: 100%;
+    /* min-height: 200vh; */
+    background: var(--background);
+    overflow-x: hidden;
+}
+
+.footer{
+    width: 100%;
+    height: 10vh;
+    background: var(--dark);
+}
+.txtlogo{
+    font-size: x-large;
+    padding: 20px;
+}
+.search{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+.search input{
+    flex: 1;
+    height: 45px;
+    border: 1px solid #ddd;
+    border-radius: 0 8px 8px 0;
+    padding: 0 15px;
+    outline: none;
+    font-family: "vazirBold", sans-serif;
+    font-size: clamp(14px, 1.5vw, 20px);
+    
+}
+.search button{
+    width: 50px;
+    height: 45px;
+    border: none;
+    background: var(--primary);
+    color: white;
+    border-radius: 8px 0 0 8px;
+    cursor: pointer;
+}
+.category{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+    position: relative;
+}
+.category:hover{
+    background: #ececec;
+}
+.cart{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cart:hover{
+    background: #ececec;
+}
+.login{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+.login:hover{
+    background: #ececec;
+}
+.category-menu{
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 220px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+    display: none;
+    overflow: hidden;
+    z-index: 2000;
+}
+.category-menu a{
+    display: block;
+    padding: 15px;
+    color: #222;
+    text-decoration: none;
+    transition: .3s;
+}
+.category-menu a:hover{
+    background: #f3f3f3;
+}
+.show{
+    display: block;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background: var(--background);
+    overflow-x: hidden;
+}
